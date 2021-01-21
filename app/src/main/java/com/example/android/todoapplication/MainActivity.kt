@@ -8,11 +8,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var result : String = "Your ToDo List is as follows : "
+        var result : String = "Your ToDo List is as follows : \n\n"
+        var i = 1
         bt.setOnClickListener {
-            result = result + "\n" + et.text.toString()
+            result = result + "\n" + i.toString()+ ")  " +et.text.toString()
             tv.text=result
             et.text.clear()
+            i=i+1
         }
     }
 }

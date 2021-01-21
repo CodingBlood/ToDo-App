@@ -4,22 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/download2">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/et"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColorHint="@color/White"
+            android:textColor="@color/White"
+            android:fontFamily="sans-serif-black"
             android:hint="Enter To Do Task"
             android:textSize="28sp" />
 
@@ -28,22 +36,34 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/White"
+            android:fontFamily="sans-serif-black"
             android:text="ADD"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_marginBottom="25dp"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
             android:id="@+id/tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="true"
             android:layout_margin="25dp"
-            android:text="Your ToDo List is as follows : "
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/White"
+            android:text="Your ToDo List is as follows :"
+            android:textFontWeight="@android:integer/config_longAnimTime"
             android:textSize="25sp"
+            android:textStyle="bold"
 
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
     </ScrollView>
