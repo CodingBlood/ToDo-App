@@ -12,38 +12,74 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/et"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:textStyle="bold"
-            android:textAllCaps="true"
-            android:textColorHint="@color/White"
-            android:textColor="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:fontFamily="sans-serif-black"
             android:hint="Enter To Do Task"
-            android:textSize="28sp" />
+            android:shadowColor="@color/colorPrimaryDark"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/bt"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/White"
+        <EditText
+            android:id="@+id/etdesc"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_weight="6"
             android:fontFamily="sans-serif-black"
-            android:text="ADD"
-            android:textSize="25sp" />
+            android:hint="Enter Description Of ToDo Task"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White"
+                android:fontFamily="sans-serif-black"
+                android:text="ADD"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/btclear"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:background="@color/White"
+                android:fontFamily="sans-serif-black"
+                android:text="Clear"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_marginBottom="25dp"
         android:layout_height="wrap_content"
@@ -64,8 +100,21 @@
             android:textFontWeight="@android:integer/config_longAnimTime"
             android:textSize="25sp"
             android:textStyle="bold"
-
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView">
+
+
     </ScrollView>
 
 
