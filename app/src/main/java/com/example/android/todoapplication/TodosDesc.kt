@@ -25,8 +25,7 @@ class TodosDesc : AppCompatActivity() {
 
 
         bk.setOnClickListener {
-            val i= Intent(this@TodosDesc, MainActivity::class.java)
-            startActivity(i)
+            super.onBackPressed();
         }
     }
 }
