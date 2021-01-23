@@ -95,6 +95,7 @@
             android:textAllCaps="true"
             android:layout_margin="25dp"
             android:fontFamily="sans-serif-black"
+            android:padding="3dp"
             android:textColor="@color/White"
             android:text="Your ToDo List is as follows :"
             android:textFontWeight="@android:integer/config_longAnimTime"
